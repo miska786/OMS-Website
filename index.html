@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ociensite Marine Surveyors and Allied Service Private Limited,Mundra,kutchh,gujarat">
+    <title>INDEX</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='js/service_rotator.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+
+</head>
+<body>
+   <header class="site-header">
+
+  <!-- Logo -->
+  <img src="{{ url_for('static', filename='photos/Logo.jpg') }}" alt="Company Logo" class="logo">
+
+  <!-- Company Name -->
+  <div class="company-name">
+    MARINE SURVEYOR AND ALLIED PRIVATE LIMITED
+  </div>
+
+  <!-- Navigation -->
+  <nav class="main-nav" id="mainMenu">
+    <ul>
+      <li><a href="{{ url_for('home') }}">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="{{ url_for('service') }}">our services</a></li>
+      <li><a href="#scope">scope ▾</a></li>
+      <li><a href="#insurance">insurance</a></li>
+      <li><a href="#quality">quality</a></li>
+      <li><a href="#contact">contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Service Rotator -->
+  <div id="service-rotator">
+    Services: <span id="serviceText"></span>
+  </div>
+
+  <!-- Auth Buttons -->
+  <div class="auth-buttons">
+    <div class="login-dropdown">
+      <button class="btn login-btn">Login ▾</button>
+      <div class="login-menu">
+        <a href="{{ url_for('admin_login') }}">Admin</a>
+        <a href="{{ url_for('employee_login') }}">Employee</a>
+      </div>
+    </div>
+    <a href="{{ url_for('signup') }}" class="btn signup-btn">Sign-up</a>
+  </div>
+
+</header>
+    <section id="home">
+        <h1>Welcome to Ociansite Marine Surveyor and Allied Private Limited</h1>
+        <p>Based in Mundra, Kutch, we are a trusted marine Surveyor and cargo supervisor company since 2019 in the maritime and logistics industry.</p>
+        <p>We specialize in inspecting, supervising, and loading goods that arrive from different locations and ensuring they are safely transferred into ships, trains, and other transport modes for smooth delivery to their final destination.</p>
+        <p>With a strong presence at the Port of Mundra, we work with exporters, importers, logistics companies, shipping agents, and transporters to ensure every cargo movement is handled with accuracy and care.</p>
+    </section>
+    <section id="about">
+        <h1>About Us</h1>
+        <p>“Oceansite Marine Surveyors & Allied Services Private Limited” commonly known as “OMS & ASPL” were form under the thought & idea to render an insight to the survey with the quality and quantity control pertinent to wide range of survey filed.
+        We provide a complete inspection of buyer’s and shippers’ product such as Container Inspections as we provides various inspector in the field of containers. Fertilizers commodities, Draft Surveyors, Minerals, Metals, Food grains, ores, Coal and so on. We work as a third-party independent service that follows the industry’s norms and provide the best results for the given project. Furthermore, we provide man power supply for factory requirements.</p>
+    <p>The motto of our company aimed is in the field of inspection and analysis we have remained independent and factual and our standard service is unrivalled. And our core activity of company is inspection, monitoring of trade and shipments. </p>
+    <p>We follow great expert practices by using appropriate strategies, and prepared staff and will try to offer proficient types of assistance to our clients and take action to upgrade their fulfillment.</p>
+     <p>We offer tailored solutions intended to address the issues of any business, regardless of the territory, OMS has consistently been and consistently will be, a pioneer and ground breaker in the field of inspection and survey. We continually try to convey ground-breaking solutions that give all-out certainty to experts.</p>
+
+    <section id="scope">
+            <h2>OUR SCOPES OF SERVICES AS PRODUCT WISE</h2>
+            <p>OMS team are qualified & well-educated experience persons in the field of quality services of Supervision Survey at various cargoes.</p>
+            <section id="fertilizer" class="subsec">
+            <h2>*Fertilizers</h2>
+            <h3>Cargo Inspection & Supervision</h3>
+            <ul>
+                <li>Draught Survey of Initial & Final</li>
+                <li>Discharging Supervision, keeping the records of truck wise movement trips.</li>
+                <li>Weighment supervision survey @ weigh bridge</li>
+                <li>Stowage supervision during the discharging of arrival cargo at nominated various godown.</li>
+            </ul>
+            <h4>Loading operation @ By Rake –</h4>
+            <p>our surveyors will be checking the wagons before loading of cargo, if any wagons were found unfit for loading shall immediately intimate to relative our principal. Note down the wagon numbers, segregation of wagon type wise such as, BCNA, BCNAHS & BCN. Preparation of loading plan as per types of wagons & as per the patterns of loading. Every quarter hour of loading status. 	</p>
+            <h4>By Road Loading Supervision -</h4>
+            <p>Our supervisor/Incharge will verified the gate pass of arrival vehicles & certified the cargo & client wise along with the storage location. Our tally surveyors will check the loading & verified the quantity. </p>
+            <h4>Rake Destination Supervision - </h4>
+            <p>We have enough talented surveyors across the India to attending the rake various destination. Our surveyors will be reaching before placing the rake & discuss with relatives clients/HT agencies. </p>
+            </section>
+            <section id="caol" class="subsec">
+                <h2>COAL ANALYSIS & Supervision</h2>
+                <ul>
+                    <li>Initial & Final Draught Survey</li>
+                    <li>Discharging Supervision & Sampling Analysis @ Lot-wise</li>
+                    <li>Analysis of Total Moisture as preferred by clients as per ASTM/ISO</li>
+                    <li>storage wise monitoring during the discharging</li>
+                    <li>Dispatched/Delivery supervision & daily samples withdrawal & TM</li>
+                    <li>Calculation of daily dry basis as preferred by client</li>
+                </ul>
+            </section>
+            <section id="steel" class="subsec">
+                <h2>STEEL & STANDARDIZED Cargo</h2>
+                <ul>
+                    <li>OMS have much experience staffs of Steel & General cargo supervision.</li> 
+                    <li>Steel general cargo like, plates, pipes, coils, structural beams etc., were supervised by our well-educated experience persons.</li>
+                    <li>Arrival Supervision at nominated premises/factory</li>
+                    <li>Physical verification and quality /quantity check</li>
+                    <li>Salt contaminated test as AgNO3 (Silver Nitrate)</li>
+                    <li>Onboard, on-wharf/shore, loading either or discharging supervision</li>
+                    <li>Stowage supervision, Lashing & securing supervision</li>
+                    <li>Prompt reporting to relative client by various means Whats App's, SMS, etc.</li>
+                </ul>
+            </section>
+            <section id="inspection" class="subsec">
+                <h2>CONTAINER Inspection</h2>
+                <p>We are ready to work with you under our scopes of works for the special inspection of container as your CFS/Internal Container Yards or any your stations.</p>
+                <ul>
+                  <li>Inspection of empty container & laden</li>
+                   <li>Pre and post repair inspection</li>
+                   <li>Stuffing / de- stuffing inspection of container</li>
+                   <li>Sealing and un sealing inspection of container</li>
+                   <li>Condition and damage assessment of container</li>
+                   <li>Lashing and unlashing supervision of container</li>
+                </ul>
+            </section>
+            <section id="vessel" class="subsec">
+                <h2>Vessel Inspection</h2>
+                <p>OMS have qualified inspectors/ much experience draft surveyors to attending the third party vessels or barge. </p>
+            <ul>
+                <li>Draught Survey </li>
+                <li>On/offhire Survey, Condition Survey</li>
+                <li>Bunker Supply Survey</li>
+                <li>Hatch Inspection Survey</li>
+                <li>Hose test of hatches cover</li>
+            </ul>
+            </section>
+            <section id="liquid" class="subsec">
+             <h2>LIQUID Cargo</h2>
+             <p>OMS have qualified inspectors and chemist cater to inspection for crude, petroleum products, edible oil and chemicals. </p>
+             <ul>
+                <li>Ullage calculation survey either ship or shore site</li>
+                <li>Bunker Survey</li>
+                <li>Tank inspection</li>
+                <li>Quantity determination of liquid cargo</li>
+                 <li>Expediters </li>
+             </ul>
+             <p>We provide comprehensive testing services. Samples for petroleum products were drawn and will giving you the zero-tolerance tested laboratory result as per your requirement parameters.</p>
+            </section>
+        </section>
+        <section id="insurance" class="subsec">
+            <h2>INSURANCE SURVEYORS & LOSS Assessors.</h2>
+            <p>Our sister concerned company M/s. TAT INSURANCE SURVEYORS & LOSS ASSESSORS LLP,  is specially for Insurance surveyors & having made the necessary declaration is hereby authorized under section 64UM of the insurance Act, 1938 & registered to IRDA LICENCE NO. IRDA/CORP/SLA-200082.
+The below category / departments are valid to work.</p>
+             <ol>
+                <li>Marine Cargo</li>
+                <li>Engineering
+                <li>Motor</li>
+                <li>Misc</li>
+             </ol>
+        </section>
+        <section id="quality" class="subsec">
+            <h2>Quality Policy</h2>
+            <p>We at OMS hereby committed to Quality Services to our customers, in the field of survey & Inspection, so as to enhance customer satisfaction.</p>
+            <p>We will comply with all regulatory requirements and provide value for money to our clients by continually improving our processes and quality management system.</p>
+            <p>Our Services will provide good service to its customers through quality of services by our trained persons inspectors, surveyors.</p>
+            <p>Ensure all personnel are competent and qualified for the task they perform and provides standard of services to its customer at all times.</p>
+        </section>
+        <section id="contact">
+            <h3>Contact Us:</h3>
+            <div class="contact-box">
+                <div class="contact-person" id="khan">
+            <h4>MR. MI KHAN <br>
+               DIRECTOR <br>
+            Mobile no. <a href="98250 22396">98250 22396</h4></a>
+                </div>
+                <div class="contact-person" id="thavar">
+
+            <h4>THAVAR TAYA KOCHRA <br>
+            DIRECTOR <br>
+        Mobile No. <a href="83209 20694">83209 20694</h4><a href="83209 20694"></a>
+                </div>
+            </div>
+            <a href=" business.oms2022@gmail.com">Email us: business.oms2022@gmail.com</a><br>
+            <a href="business@oceansitemarinesurveyors.com">business@oceansitemarinesurveyors.com</a>
+        </section>
+        <footer id="footer" class="footer">
+        <h4>Our Motto:</h4>
+        <p>True Value, monitors the customer feedback at every 3 months once to achieve zero (0) complaint.</p>
+        </footer>
+        <script src="rotator.js"></script>
+</body>
+</html>

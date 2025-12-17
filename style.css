@@ -1,0 +1,189 @@
+body {
+     padding: 12px;
+     margin: 12px;
+}
+
+section {
+  padding: 22px;
+  margin: 15px;
+  border: #2f3333;
+}
+.subsec {
+    padding: 20px 0;
+}
+.subsec h2 {
+    margin-top: 0;
+}
+.subsec {
+    scroll-margin-top: 170px;
+}
+
+.services {
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+}
+
+#services h1,
+#services h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#contact {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+.contact-person {
+    width: 45%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 10px;
+}
+.contact-person h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+.contact-person p {
+    margin: 0;
+    line-height: 1.4;
+}
+@media (max-width:700px) {
+    .contact-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-person{
+        width: 90%;
+        text-align: center;
+    }
+}
+/* FULL WIDTH FOOTER — IGNORE ALL PARENT CONTAINERS */
+/* Full-width centered footer (no right-shift) */
+footer, #footer {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* center the breakout */
+  width: 100vw;                /* full viewport width */
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding: 30px 0;
+  background-color: #333;
+  color: aliceblue;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Make sure internal content is constrained and centered */
+footer .footer-content,
+#footer .footer-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+/* Defensive: reset any floats or transforms from parents */
+footer, #footer {
+  float: none !important;
+}
+
+
+footer h4, #footer h4 {
+    color: aliceblue;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer p, #footer p {
+    color: aliceblue;
+    font-size: 18px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+
+}
+
+.login-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.login-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 140px;
+    top: 40px;
+    right: 0;
+    text-align: left;
+    padding: 5px 0;
+    z-index: 200;
+}
+
+.login-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-menu a:hover {
+    background: #0b93a6;
+    color: white;
+}
+
+.login-dropdown:hover .login-menu {
+    display: block;
+}
+
+.two-column-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.box {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.box h2{
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 800px) {
+    .two-column-box {
+        flex-direction: column;
+    }
+}

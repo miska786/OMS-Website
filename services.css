@@ -1,0 +1,532 @@
+body {
+     padding: 12px;
+     margin: 12px;
+}
+
+/* =========================================================
+   GLOBAL SECTION RULES
+========================================================= */
+section {
+  padding: 22px;
+  margin: 15px;
+  border: #2f3333;
+}
+
+/* =========================================================
+   OVERRIDE SERVICE SECTION TO FIX SMALL IMAGES
+========================================================= */
+#service-we {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: auto !important;
+}
+
+#service-we .two-column-box,
+#service-we .subsec,
+#service-we ol {
+  max-width: 1200px !important;
+  width: 100% !important;
+}
+.subsec {
+    padding: 20px 0;
+}
+.subsec h2 {
+    margin-top: 0;
+}
+.subsec {
+    scroll-margin-top: 170px;
+}
+
+.services {
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+}
+
+/* =========================================================
+   DRAUGHT SECTION (LARGE IMAGE LEFT)
+========================================================= */
+.draught-section { list-style:none; margin: 28px 0; }
+
+.draught-inner {
+  display:flex;
+  gap:36px;
+  align-items: center;
+  width:100%;
+}
+
+.draught-img {
+  flex:0 0 40%;
+  max-width:40%;
+  min-width:320px;
+  padding:  0 2px;
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+}
+
+.draught-img img {
+  width:100%;
+  height:auto;
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.22);
+  object-fit:cover;
+  display:block;
+}
+
+.draught-content { flex:1; }
+
+.draught-head {
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:12px;
+}
+
+.draught-desc {
+  font-size:15px;
+  color:#6b6b6b;
+  line-height:1.8;
+}
+
+.draught-feature {
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+
+.draught-feature img {
+  width:84px;
+  height:84px;
+  object-fit:cover;
+  border-radius:4px;
+}
+
+/* =========================================================
+   CARGO SECTION (IMAGE ON RIGHT, CORRECT SIZE)
+========================================================= */
+
+.cargo-section {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+}
+
+.cargo-inner {
+    display: flex;
+    flex-direction: row-reverse;   /* image on right */
+    gap: 36px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left content, right image */
+.cargo-content {
+    flex: 1;
+}
+
+/* Image column sizing */
+.cargo-img {
+    flex: 0 0 40%;          /* width of right column */
+    max-width: 40%;
+    min-width: 320px;       /* prevents shrinking too small */
+    overflow: hidden;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.22);
+    border-radius: 8px;
+}
+
+/* IMAGE styling */
+.cargo-img img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.22);
+    object-fit: cover;
+    max-height: 420px;      /* SAME size as draught image */
+    display: block;
+    border-radius: 8px;
+}
+
+/* Headings / Text */
+.cargo-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    color: #2f2f2f;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.cargo-desc {
+    margin: 0 0 18px;
+    color: #6b6b6b;
+    line-height: 1.8;
+    font-size: 15px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Mini feature row */
+.cargo-feature {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.cargo-feature img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.cargo-line {
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+/* =========================================================
+   RESPONSIVE (Mobile)
+========================================================= */
+@media (max-width:880px) {
+    
+    .cargo-inner {
+        flex-direction: column;     /* stack on phone */
+    }
+
+    .cargo-img {
+        max-width: 100% !important;
+        width: 100% !important;
+        min-width: auto !important;
+    }
+
+    .cargo-img img {
+        max-height: 360px;
+    }
+
+    .cargo-feature img {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+/* =========================================================
+   CARGO SECTION (IMAGE ON RIGHT, CORRECT SIZE)
+========================================================= */
+
+.godown-section {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+}
+
+.godown-inner {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left content, right image */
+.godown-content {
+    flex: 1;
+}
+
+/* Image column sizing */
+.godown-img {
+    flex: 0 0 40%;          /* width of right column */
+    max-width: 40%;
+    min-width: 320px;        /* prevents shrinking too small */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.22);
+    padding: 2px;
+    border-radius: 8px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/* IMAGE styling */
+.godown-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    max-height: 420px;      /* SAME size as draught image */
+    display: block;
+}
+
+/* Headings / Text */
+.godown-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    color: #2f2f2f;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.godown-desc {
+    margin: 0 0 18px;
+    color: #6b6b6b;
+    line-height: 1.8;
+    font-size: 15px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Mini feature row */
+.godown-feature {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.godown-feature img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.godown-line {
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+/* bagging-section + coal-section (fixed & cleaned) */
+/* Correct image styling for bagging, loading, destination, coal */
+.bagging-img img,
+.destination-img img,
+.coal-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 370px;   /* same height for all */
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.bagging-section,
+.destination-section,
+.coal-section {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+}
+
+.bagging-inner,
+.destination-inner,
+.coal-inner {
+    display: flex;
+    flex-direction: row-reverse; /* image on right; change to row if you want image left */
+    gap: 36px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left content, right image */
+.bagging-content,
+.destination-content,
+.coal-content {
+    flex: 1;
+}
+
+/* Image column sizing */
+.bagging-img,
+.loading-img,
+.destination-img,
+.coal-img {
+    flex: 0 0 40%;          /* width of right column */
+    max-width: 50%;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 12px;
+    min-width: 320px;       /* prevents shrinking too small on wide screens */
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/* IMAGE styling — note corrected selectors */
+.bagging-img img,
+.destination-img img,
+.coal-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 370px;      /* visual height */
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Headings / Text */
+.bagging-head,
+.destination-head,
+.coal-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    color: #2f2f2f;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.bagging-desc,
+.destination-desc,
+.coal-desc {
+    margin: 0 0 18px;
+    color: #6b6b6b;
+    line-height: 1.8;
+    font-size: 15px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Mini feature row */
+.bagging-feature,
+.destination-feature,
+.coal-feature {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+/* Thumbnail images inside the feature row (fixed) */
+.bagging-feature img,
+.destination-feature img,
+.coal-feature img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.bagging-line,
+.destination-line,
+.coal-line {
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 880px){
+    .bagging-inner,
+    .coal-inner,
+    .destination-inner {
+        flex-direction: column;     /* stack image above text on small screens */
+    }
+  }
+.coal-inner{
+  display: flex;
+  flex-direction: row;
+}
+
+.bagging-img,
+.destination-img,
+.coal-img {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: auto !important; /* remove the min-width on small screens */
+}
+
+.bagging-img,
+.destination-img,
+.coal-img img {
+   max-height: 320px;
+}
+
+.bagging-feature img,
+.destination-feature img,
+.coal-feature img {
+      width: 72px;
+      height: 72px;
+}
+
+/* ===== Loading section (fixed) ===== */
+.loading-section {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+}
+
+.loading-inner {
+    display: flex;
+    gap: 36px;
+    align-items: center; /* centers text vertically */
+    width: 100%;
+}
+
+/* Left content, right image */
+.loading-content {
+    flex: 1;
+}
+
+/* Image column sizing (container) */
+.loading-img,
+.laoding-img {              /* include both spellings in case HTML has typo */
+    flex: 0 0 40%;
+    max-width: 40%;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 12px;
+    min-width: 220px;       /* reduce min width a bit to avoid horizontal scroll on smaller screens */
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/* IMAGE styling (actual <img> inside the container) */
+.loading-img img,
+.laoding-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 370px;      /* increase so it matches other sections */
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Headings / Text */
+.loading-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    color: #2f2f2f;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.loading-desc {
+    margin: 0 0 18px;
+    color: #6b6b6b;
+    line-height: 1.8;
+    font-size: 15px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Mini feature row */
+.loading-feature {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.loading-feature img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.loading-line {
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width:880px) {
+    .loading-inner { flex-direction: column; }
+    .loading-img, .laoding-img { width: 100% !important; max-width: 100% !important; min-width: auto !important; }
+    .loading-img img, .laoding-img img { max-height: 320px; }
+    .loading-feature img { width:72px; height:72px; }
+}

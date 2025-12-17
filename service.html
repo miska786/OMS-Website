@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename='services.css') }}">
+    <script src= "{{ url_for('static', filename='js/service_rotator.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+</head>
+<body>
+<header class="site-header">
+
+  <!-- Logo -->
+  <img src="{{ url_for('static', filename='photos/Logo.jpg') }}" alt="Company Logo" class="logo">
+
+  <!-- Company Name -->
+  <div class="company-name">
+    MARINE SURVEYOR AND ALLIED PRIVATE LIMITED
+  </div>
+
+  <!-- Navigation -->
+  <nav class="main-nav" id="mainMenu">
+    <ul>
+      <li><a href="{{ url_for('home') }}">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="{{ url_for('service') }}">our services</a></li>
+      <li><a href="#scope">scope ▾</a></li>
+      <li><a href="#insurance">insurance</a></li>
+      <li><a href="#quality">quality</a></li>
+      <li><a href="#contact">contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Service Rotator -->
+  <div id="service-rotator">
+    Services: <span id="serviceText"></span>
+  </div>
+
+  <!-- Auth Buttons -->
+  <div class="auth-buttons">
+    <div class="login-dropdown">
+      <button class="btn login-btn">Login ▾</button>
+      <div class="login-menu">
+        <a href="{{ url_for('admin_login') }}">Admin</a>
+        <a href="{{ url_for('employee_login') }}">Employee</a>
+      </div>
+    </div>
+    <a href="{{ url_for('signup') }}" class="btn signup-btn">Sign-up</a>
+  </div>
+
+</header>
+    <section id="service-we">
+        <h1>Our Services</h1>
+        <p>OMS & AS Pvt Ltd, commonly known as “OMS” has sufficient teams & most experiences persons offering expertise in a wide range of cargo supervision survey, Container inspections, marine surveyors, loss assessors and claim settling & others allied services like man power supply services to factory premises as security, helpers, engineering work & electrician etc. </p>
+        <div class="two-column-box">
+            <section id="import" class="subsec box">
+            <h2>IMPORT CONSIGNMENT:</h2>
+            <ol>
+              <!-- Replace your old .draught block with this -->
+<li class="draught-section">
+  <div class="draught-inner">
+    <div class="draught-img">
+      <img src="{{ url_for('static', filename='photos/Draught Survey.png') }}" alt="Draught survey">
+    </div>
+
+    <div class="draught-content">
+      <!-- Main bold line similar to screenshot -->
+      <div class="draught-head">Draught Survey / Bunker Survey of Off-Hire, On-Hire, Conditions, Supply Survey.</div>
+
+      <!-- Supporting description (optional) -->
+      <p class="draught-desc">We perform accurate draught and bunker surveys for on-hire / off-hire, supply checks and condition reporting with daily records and certified reports.</p>
+
+      <!-- small thumbnail + short list item feel -->
+      <div class="draught-feature">
+        <span class="draught-line">Detailed measurement, tank checks and certified documentation.</span>
+        <img src="{{ url_for('static', filename='photos/Draught Survey.png') }}" alt="draught-feature">
+      </div>
+    </div>
+  </div>
+</li>
+<li class="cargo-section">
+  <div class="cargo-inner">
+     <div class="cargo-img">
+       <img src="{{ url_for('static', filename='photos/cargo discharge.png') }}" alt="cargo-discharge">
+     </div>
+     <div class="cargo-content">
+          <div class="cargo-head">Discharging Supervision either bulk cargo, projects, steels and containers</div>
+          <p class="cargo-desc">We provide end-to-end discharging supervision ensuring safe, accurate and efficient unloading of bulk cargo, steel materials, project cargo and containers, while maintaining real-time records and operational control.</p>
+          <div class="cargo-feature">
+          <span class="cargo-line">Continuous oversight, cargo condition verification and well-documented discharge records.</span>
+          </div>
+      </div>
+  </div>
+</li>
+    <li class="godown-section">
+      <div class="godown-inner">
+        <div class="godown-img">
+          <img src="{{ url_for('static', filename='photos/godown-img.png') }}" alt="godown-img">
+        </div>
+        <div class="godown-content">
+          <div class="godown-head">Godown-wise or stowage wise supervision </div>
+          <p class="godown-desc">We monitor godown-wise and stowage-wise operations to ensure proper cargo placement, secure handling, accurate documentation, and smooth movement inside storage areas.
+            Our team supervises cargo allocation across different godowns and stowage locations, ensuring correct stacking, damage prevention, space optimization, and compliance with client instructions.
+          </p>
+          <div class="godown-feature">
+            <span class="godown-line">Efficient cargo placement, accurate records and safe stowage handling.</span>
+            <img src="{{ url_for('static', filename='photos/displace-godown.png') }}" alt="displace-img">
+          </div>
+        </div>
+      </div>
+    </li>
+<li class="bagging-section">
+     <div class="bagging-inner">
+            <div class="bagging-img">
+                <img src="{{ url_for('static', filename='photos/bagging-content.png') }}" alt="bagging-img">
+            </div>
+                    <div class="bagging-content">
+                      <div class="bagging-head">Bagging & Standardization supervision specially for fertilizers & Agro products</div>
+                      <p class="bagging-desc">We supervise bagging and standardization processes to ensure accurate weight, proper sealing, uniform packing quality and contamination-free handling, especially for fertilizers and agro products.
+                        Our team oversees the complete bagging operation, monitoring weight accuracy, packaging quality, product standardization and correct labeling to maintain consistency and meet client specifications for fertilizers and agro commodities.
+                      </p>
+                      <div class="bagging-feature">
+                        <span class="bagging-line">Accurate weighing, uniform packing and contamination-free handling.</span>
+                        <img src="{{ url_for('static', filename='photos/bag-two.png') }}" alt="bag-two">
+                      </div>
+            </div>
+    </div>
+</li>
+                <li class="loading-section">
+                  <div class="loading-inner">
+                    <div class="laoding-img">
+                      <img src="{{ url_for('static', filename='photos/loading-img.png') }}" alt="loading-img">
+                    </div>
+                    <div class="loading-content">
+                     <div class="loading-head">Loading supervision either by road or rake</div>
+                     <p class="loading-desc">We supervise loading operations by road and rake to ensure correct vehicle placement, accurate weighment, safe loading practices, proper documentation, and continuous monitoring until dispatch is completed.
+                      Our team monitors loading activities for both road transportation and railway rakes, checking vehicle conditions, verifying material weight, ensuring proper stacking, preventing losses and delays, and maintaining complete loading records for clients.
+                     </p>
+                     <div class="loading-feature">
+                      <span class="loading-line">Safe loading, accurate weighment and clear dispatch records.</span>
+                      <img src="{{ url_for('static', filename="photos/loading-one.png") }}" alt="loading-one">
+                     </div>
+                     </div>
+                  </div>
+                </li>
+                <li class="destination-section">
+                  <div class="destination-inner">
+                    <div class="destination-img">
+                      <img src="{{ url_for('static', filename='photos/destination-two (2).png') }}" alt="destination-two">
+                    </div>
+                    <div class="destination-content">
+                        <div class="destination-head">Destination supervision across India</div>
+                        <p class="destination-desc">We provide destination supervision across India, ensuring proper cargo receiving, weight verification, condition checking and timely reporting at the final delivery point as per client instructions.</p>
+                        <p class="destination-desc">Our destination supervision team monitors cargo arrival at various locations across India, verifies quantity and condition, checks documentation, ensures safe unloading and delivers accurate final reports to assist in transparent and smooth delivery operations.</p>
+                        <div class="destination-feature">
+                           <span class="destination-line">Safe unloading, quantity validation and transparent final documentation.</span>
+                           <img src="{{ url_for('static', filename='photos/destination-two.png') }}" alt="destination-two">
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="coal-section">
+                  <div class="coal-inner">
+                    <div class="coal-img">
+                      <img src="{{ url_for('static', filename='photos/coalinspection-one.png') }}" alt="coal-one">
+                    </div>
+                    <div class="coal-content">
+                      <div class="coal-head">Coal Supervision Survey & Analysis as per client requirement</div>
+                      <p class="coal-desc">We provide complete coal supervision and analysis services, including sampling, moisture testing, quality verification and quantity assessment, ensuring accurate reporting as per client requirements and industry standards.</p>
+                      <p class="coal-desc">Our coal supervision team conducts systematic sampling, laboratory analysis, moisture determination, size distribution checks and loading/unloading monitoring to ensure precise quality control and reliable results tailored to client specifications.</p>
+                      <div class="coal-feature">
+                        <span class="coal-line">Reliable coal analysis with monitored handling and certified reporting.</span>
+                        <img src="{{ url_for('static', filename='photos/coal-two.png') }}" alt="coal-two">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+            </ol>
+            </section>
+            <section id="export" class="subsec box">
+            <h2>EXPORT CONSIGNMENT:</h2>
+            <ol>
+                <li>Pre-shipment supervision, hatch inspection, hose test of hatch cover</li>
+                <li>Loading Supervision @ vessel if require draught survey</li>
+                <li>Daily monitoring loading supervision & daily reporting</li>
+                <li>Certification of quantity, damage/delay and detentions</li>
+                <li>Final reports as mutually agreed by chief/Master of the nominated vessel</li>
+            </ol>
+        </section>
+        </div>
+        <div class="boxes">
+        <section id="container" class="subsec box">
+            <h2>CONTAINER INSPECTION:</h2>
+            <ol>
+                <li>General Cargo Inspection</li>
+                <li>Stuffing & De-Stuffing</li>
+                <li>Timber Log Supervision</li>
+                <li>Certification of Container Validation. Condition of Container Inspection</li>
+                <li>Submission of specific report to clients.</li>
+                <li>Inspection of ISO Tank Container</li>
+            </ol>
+        </section>
+        <section id="allied" class="subsec box">
+            <h2>ALLIED SERVICES:</h2>
+            <p>OMS is ready to supply man power for factory/company needed. We are
+	Supplying man power to factory/company as require or need time to time as security services. 
+    <br>We have enough man power supply of EX-forces from various sources as ARMY, CRPF, BSF or state forces.
+And we are ready to provide civil works as electrician, Plumbing works, engineering works & many others.   </p>
+        </section>
+        </div>
+       <!-- put this where your scope section should be -->
+<div class="scope-box">
+  <section id="scope" class="subsec">
+    <h2>OUR SCOPES OF SERVICES AS PRODUCT WISE</h2>
+    <p>OMS team are qualified & well-educated experience persons in the field of quality services of Supervision Survey at various cargoes.</p>
+
+    <section id="fertilizer" class="subsec inner-box">
+      <h3>*Fertilizers</h3>
+
+      <div class="content-box">
+        <h4>Cargo Inspection & Supervision</h4>
+        <ul id="cargo">
+          <li>Draught Survey of Initial & Final</li>
+          <li>Discharging Supervision, keeping the records of truck wise movement trips.</li>
+          <li>Weighment supervision survey @ weigh bridge</li>
+          <li>Stowage supervision during the discharging of arrival cargo at nominated various godown.</li>
+        </ul>
+      </div>
+
+      <div class="content-box">
+        <h4>Loading operation @ By Rake –</h4>
+        <p>Our surveyors will be checking the wagons before loading of cargo...</p>
+      </div>
+
+      <div class="content-box">
+        <h4>By Road Loading Supervision -</h4>
+        <p>Our supervisor/Incharge will verify the gate pass...</p>
+      </div>
+
+      <div class="content-box">
+        <h4>Rake Destination Supervision -</h4>
+        <p>We have enough talented surveyors across India...</p>
+      </div>
+
+    </section>
+  </section>
+</div>
+  <div class="coal-box">
+  <section id="caol" class="subsec coal-boxes">
+                <h2>COAL ANALYSIS & Supervision</h2>
+                <ul>
+                    <li>Initial & Final Draught Survey</li>
+                    <li>Discharging Supervision & Sampling Analysis @ Lot-wise</li>
+                    <li>Analysis of Total Moisture as preferred by clients as per ASTM/ISO</li>
+                    <li>storage wise monitoring during the discharging</li>
+                    <li>Dispatched/Delivery supervision & daily samples withdrawal & TM</li>
+                    <li>Calculation of daily dry basis as preferred by client</li>
+                </ul>
+            </section>
+  </div>
+    <script src="rotator.js"></script>
+</body>
+</html>

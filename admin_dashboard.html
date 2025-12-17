@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body{
+            background-color: rgb(124, 245, 245);
+        }
+        .headers{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        h2{
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+        }
+        p{
+            color: #333;
+        }
+.admin-pass{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+.admin-pass a{
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #0b93a6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+.admin-pass a:hover{
+    background-color: #087f8f;
+}
+    </style>
+</head>
+<body>
+    <h4 class="headers">Admin Dashboard</h4>
+    <div class="admin-pass">
+    <a href="{{ url_for('admin_attendance') }}">View Attendance Records</a>
+    <a href="{{ url_for('change_password') }}">Change Employee Password</a>
+    </div>
+<p>Login successful.</p>
+
+<a href="{{ url_for('home') }}">Go to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* ===== COMMON HEADER (USED BY ALL PAGES) ===== */
+
+.site-header {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 24px 100px;
+    box-sizing: border-box;
+    background-color: rgb(197, 247, 247);
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Logo */
+.site-header .logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Company name (if any) */
+.company-name {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #4b0082;
+}
+
+/* Navigation */
+.main-nav {
+    margin-top: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 24px;
+    display: inline-flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #4b0082;
+    font-weight: 600;
+}
+
+/* Auth buttons */
+.auth-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-btn {
+    background: #222;
+}
+
+.signup-btn {
+    background: #0b93a6;
+}
+
+/* Login dropdown (if you use it) */
+.login-dropdown {
+    position: relative;
+}
+
+.login-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: white;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.login-dropdown:hover .login-menu {
+    display: block;
+}
+
+/* ===== SERVICE ROTATOR TEXT (HEADER) ===== */
+
+#service-rotator {
+    text-align: center;
+    font-size: 85px;
+    color: #111;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+#serviceText {
+    font-size: 80px;
+    color: #5781f3;
+    font-weight: 900;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADER FILE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <img src="{{ url_for('static', filename='photos/Logo.jpg') }}" class="logo">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('service') }}">Our Service</a></li>
+                <li><a href="#scope">Scope</a></li>
+                <li><a href="#insurance">Insurance</a></li>
+                <li><a href="#quality">Quality</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-button">
+            <a href="{{ url_for('admin_login') }}">Admin</a>
+            <a href="{{ url_for('employee_login') }}">Employee</a>
+            <a href="{{ url_for('signup') }}" class="signup-btn">Sign-up</a>
+        </div>
+        {% block header_extra %}{% endblock %}
+    </header> 
+    {% block content %}{% endblock %}   
+</body>
+</html>
